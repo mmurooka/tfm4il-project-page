@@ -15,3 +15,10 @@ figcaption, .footer p {
 }
 
 .keep-together { white-space: nowrap; }
+
+.publication-links .button-icon {
+  width: 1.15em;
+  height: 1.15em;
+  flex-shrink: 0;
+  margin-right: 0.45em;
+}

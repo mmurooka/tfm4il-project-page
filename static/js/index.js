@@ -5,7 +5,11 @@
     const link = document.createElement('a');
     link.className = 'button is-dark is-rounded';
     link.href = href;
-    link.textContent = label;
+    const icon = placeholder.querySelector('.button-icon');
+    if (icon) link.append(icon.cloneNode(true));
+    const text = document.createElement('span');
+    text.textContent = label;
+    link.append(text);
     placeholder.replaceWith(link);
   }
   if (/^https:\/\/arxiv\.org\/abs\/[a-zA-Z0-9./-]+$/.test(links.arxivUrl || '')) {
