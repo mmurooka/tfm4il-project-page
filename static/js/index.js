@@ -17,13 +17,6 @@
   }
   if (/^[a-zA-Z0-9_-]{11}$/.test(links.youtubeId || '')) {
     replacePlaceholder('youtube-placeholder', `https://www.youtube.com/watch?v=${links.youtubeId}`, 'YouTube');
-    const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube-nocookie.com/embed/${links.youtubeId}`;
-    iframe.title = 'Research overview';
-    iframe.loading = 'lazy';
-    iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-    iframe.allowFullscreen = true;
-    document.getElementById('overview-video').replaceChildren(iframe);
   }
   document.getElementById('copy-bibtex').addEventListener('click', async () => {
     const citation = document.getElementById('bibtex');
