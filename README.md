@@ -2,7 +2,7 @@
 
 Project page for **Evaluating Tactile Foundation Models for End-to-End Imitation Learning in Contact-Rich Manipulation**.
 
-[Research code](https://github.com/isri-aist/TacLatentIL)
+[Paper](https://arxiv.org/abs/2611.00957) · [Research code](https://github.com/isri-aist/TacLatentIL)
 
 ## Local preview
 
@@ -16,7 +16,7 @@ Open http://localhost:8000.
 
 ## Publication links
 
-Set `arxivUrl` and `youtubeId` in `static/js/links.js` after publication, and update the BibTeX entry in `index.html`. The paper is distributed exclusively through arXiv.
+Publication links are configured in `static/js/links.js`; the BibTeX entry is in `index.html`. The paper is distributed exclusively through arXiv.
 
 ## Credits
 
